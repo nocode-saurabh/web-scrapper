@@ -27,7 +27,3 @@ def messages_for(content: str):
         }
     }
     return city_fact_prompt
-    # return [
-    #     {"role": "system", "content":city_fact_prompt["system_prompt"] },
-    #     {"role": "user", "content": city_fact_prompt["user_prompt"]}
-    # ]
