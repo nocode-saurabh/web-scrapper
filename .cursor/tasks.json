@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Format Python Files",
+            "type": "shell",
+            "command": "black . && isort . && ruff check . --fix",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Check Python Formatting",
+            "type": "shell",
+            "command": "black --check . && isort --check-only . && ruff check .",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        }
+    ]
+}
