@@ -1,0 +1,20 @@
+{
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "black",
+    "python.sortImports.path": "isort",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "black",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "[python]": {
+        "editor.defaultFormatter": "black",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "python.linting.enabled": true,
+    "python.linting.ruffEnabled": true,
+    "python.linting.ruffPath": "ruff"
+}
