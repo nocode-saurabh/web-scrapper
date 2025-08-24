@@ -13,7 +13,9 @@ app = FastAPI(
 )
 app.add_middleware(
        CORSMiddleware,
-       allow_origins=["https://nocode-saurabh.github.io/factopedia-web/", "http://localhost:3000"],  # React app's origin
+       allow_origins=["https://nocode-saurabh.github.io",  # Base domain
+        "https://nocode-saurabh.github.io/factopedia-web",  # Your specific app path
+        "http://localhost:3000",]  # Local development],  # React app's origin
        allow_credentials=True,
        allow_methods=["*"],
        allow_headers=["*"],
